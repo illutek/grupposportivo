@@ -1,0 +1,16 @@
+name = Gruppo
+description = Voor de wielerclub Grupposportivo, gebruikt framework Bootstrap 3.3.2
+version = VERSION
+core = 7.x
+
+stylesheets[all][] = css/bootstrap.min.css
+stylesheets[all][] = css/bootstrap-theme.css
+stylesheets[all][] = css/style.css
+
+regions[content] = Content
+regions[sidebar_left] = Linker zijbalk
+regions[news_anoniem] = Nieuws anoniem
+regions[news_leden] = Nieuws leden
+regions[bottom_first] = Onder eerst
+regions[bottom_midle] = Onder midden
+regions[bottom_last] = Onder laatste
