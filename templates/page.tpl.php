@@ -25,7 +25,7 @@
                         <li><a href="#">Permanente ritten</a> </li>
                     </ul>
                 </li>
-                <li><a href="#">Leden</a></li>
+                <li><a href="/leden">Leden</a></li>
                 <li><a href="#">Aanwezigheidslijst</a></li>
                 <li><a href="/blog">Blog</a></li>
                 <li><a href="/grupposprotivo-contacteren">Contacteren</a> </li>
@@ -53,7 +53,7 @@
             <?php endif; ?>
         </div>
             <div class="col-md-8 route">
-                <a href="/route-naar-de-flipper">
+                <a href="<?php print base_path() ?>route-naar-de-flipper">
                 <img src="<?php print base_path() . path_to_theme(); ?>/images/google_maps_icon-min.jpg">
                 Café Flipper Heirstraat 156 3630 Maasmechelen</a><!-- hier printen van de contact gegevens -->
             </div>
@@ -94,9 +94,10 @@
                 <?php print render($page['content']); ?>
                 <?php print $feed_icons; ?>
             </div><! end content -->
-            <hr>
+
             <!-- Onderste content met 3 verschillende regions worden altijd getoon -->
-            <div id="content_bottom_wrap">
+            <div class="" id="content_bottom_wrap">
+                <hr>
                 <div class="bottom_first col-md-4">
                     <div class="bottom_content">
                         <!-- zou kunnen dat ik hier de p tags moet toevoegen om de
@@ -104,7 +105,7 @@
                         <?php print render($page['bottom_first']); ?>
                     </div>
                     <!-- de link aanpassen naar de content -->
-                    <a href="/blog" class="btn btn-gruppo" role="button">Meer</a>
+                    <a href="<?php print base_path() ?>blog" class="btn btn-gruppo" role="button">Meer</a>
                 </div>
                 <div class="bottom_midle col-md-4">
                     <div class="bottom_content">
@@ -122,7 +123,7 @@
                         <?php print render($page['bottom_last']); ?>
                     </div>
                     <!-- de link aanpassen naar de content -->
-                    <a href="/wielerflits" class="btn btn-gruppo" role="button">Meer</a>
+                    <a href="<?php print base_path() ?>wielerflits" class="btn btn-gruppo" role="button">Meer</a>
                 </div>
             </div>
         </div><!-- end content_wrap -->

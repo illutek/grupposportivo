@@ -110,6 +110,13 @@ img {
     padding-right: 15px;
 }
 
+/*bottom region*/
+
+#content_bottom_wrap {
+    clear: both;
+    margin-top: 25px;
+}
+
 #content_bottom_wrap h2 {
     font-size: 18px;
 }
@@ -189,7 +196,9 @@ footer {
 
 /*Blog systeem*/
 
-.view-id-blog .submitted,.node-blog .submitted { padding-bottom: 10px; }
+.view-id-blog .submitted, .node-blog .submitted {
+    padding-bottom: 10px;
+}
 
 .attachment-after {
     margin-top: 25px;
@@ -206,6 +215,17 @@ footer {
 
 .attachment-row {
     padding: 5px 0;
+}
+
+/*leden pagina*/
+
+.node-lid {
+    width: 220px;
+    float: left;
+}
+
+.node-lid  h3 {
+    font-size: 17px;
 }
 
 /*better login */
