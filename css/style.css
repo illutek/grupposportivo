@@ -219,12 +219,22 @@ footer {
 
 /*leden pagina*/
 
-.node-lid {
+.node-lid, .node-linken {
     width: 220px;
     float: left;
 }
 
-.node-lid  h3 {
+.node-lid {
+    height: 275px;
+    margin-right: 50px;
+}
+
+.node-linken {
+    height: 220px;
+    margin-right: 20px;
+}
+
+.node-lid h3 {
     font-size: 17px;
 }
 
