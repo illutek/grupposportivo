@@ -22,9 +22,9 @@
                         <span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu" role="menu">
-                        <li><a href="#">Grupposportivo ritten</a> </li>
-                        <li><a href="#">Oefenritten</a> </li>
-                        <li><a href="#">Klassiekers</a> </li>
+                        <li><a href="<?php print base_path() ?>grupposportivo-ritten ">Grupposportivo ritten</a> </li>
+                        <li><a href="#">Oefenritten</a></li>
+                        <li><a href="#">Klassiekers</a></li>
                         <li><a href="#">Permanente ritten</a> </li>
                         <li><a href="<?php print base_path() ?>gps-route">GPS ritten</a> </li>
                     </ul>
@@ -33,7 +33,8 @@
                 <li><a href="<?php print base_path() ?>aanwezigheidslijst">Aanwezigheidslijst</a></li>
                 <li><a href="<?php print base_path() ?>blog">Blog</a></li>
                 <li><a href="<?php print base_path() ?>linken">Linken</a></li>
-                <li><a href="<?php print base_path() ?>grupposprotivo-contacteren">Contacteren</a> </li>
+                <li><a href="<?php print base_path() ?>grupposprotivo-contacteren">Contacteren</a></li>
+                <li><a href="<?php print base_path() ?>gastenboek-berichten ">Gastenboek</a></li>
                 <li><a href="#">Fotoalbums</a></li>
                 <li><a href="#">Video's</a></li>
             </ul>
