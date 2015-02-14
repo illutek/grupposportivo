@@ -70,10 +70,11 @@ img {
 
 .sponsor_wrap {
     width: 100%;
-    display: inline-block;
-    overflow: hidden; /*dit zorgt ervoor dat de div ook onder de afbeelding komt*/
     padding-bottom: 10px;
     border-bottom: solid 1px #e4e4e4;
+    /*dit zorgt ervoor dat de div ook onder de afbeelding komt*/
+    display: inline-block;
+    overflow: hidden;
 }
 
 .sponsor_wrap img {
@@ -204,13 +205,18 @@ footer {
     margin-top: 25px;
 }
 
-.attachment-after table {
+.attachment-after table,.view-gps-route table {
     width: 100%;
 }
 
-.attachment-after th {
+.attachment-after th,.view-gps-route th {
     border: solid 1px #ffffff;
     padding: 5px 0;
+}
+
+.attachment-after td,.view-gps-route td {
+    padding: 5px 0;
+    border-bottom: solid 1px #e4e4e4;
 }
 
 .attachment-row {

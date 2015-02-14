@@ -22,10 +22,11 @@
                         <span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu" role="menu">
-                        <li><a href="/wielerflits">Grupposportivo ritten</a> </li>
+                        <li><a href="#">Grupposportivo ritten</a> </li>
                         <li><a href="#">Oefenritten</a> </li>
                         <li><a href="#">Klassiekers</a> </li>
                         <li><a href="#">Permanente ritten</a> </li>
+                        <li><a href="<?php print base_path() ?>gps-route">GPS ritten</a> </li>
                     </ul>
                 </li>
                 <li><a href="<?php print base_path() ?>leden">Leden</a></li>
@@ -62,7 +63,8 @@
         </div><!-- end logo_wrap -->
         <div id="club_name_wrap" class="col-md-8">
             <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="">
-                <img src="<?php print base_path() . path_to_theme(); ?>/images/club_name-min.png" class="img-responsive">
+                <img src="<?php print base_path() . path_to_theme(); ?>/images/club_name-min.png"
+                     class="img-responsive" alt="Grupposportivo">
             </a>
             <?php if ($site_slogan): ?>
                 <div class="slogan"><?php print $site_slogan; ?></div>
@@ -70,7 +72,8 @@
         </div>
             <div class="col-md-8 route">
                 <a href="<?php print base_path() ?>route-naar-de-flipper">
-                <img src="<?php print base_path() . path_to_theme(); ?>/images/google_maps_icon-min.jpg">
+                <img src="<?php print base_path() . path_to_theme(); ?>/images/google_maps_icon-min.jpg"
+                     alt="google_maps">
                 Café Flipper Heirstraat 156 3630 Maasmechelen</a><!-- hier printen van de contact gegevens -->
             </div>
         </div><!-- end club_name_wrap -->
@@ -102,11 +105,13 @@
             <div class="content">
                 <a id="main-content"></a>
                 <?php print render($title_prefix); ?>
-                <?php if ($title): ?><h1 class="title" id="page-title"><?php print $title; ?></h1><?php endif; ?>
+                <?php if ($title): ?>
+                    <h1 class="title" id="page-title"><?php print $title; ?></h1><?php endif; ?>
                 <?php print render($title_suffix); ?>
                 <?php if ($tabs): ?><div class="tabs"><?php print render($tabs); ?></div><?php endif; ?>
                 <?php print render($page['help']); ?>
-                <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
+                <?php if ($action_links): ?>
+                    <ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
                 <?php print render($page['content']); ?>
                 <?php print $feed_icons; ?>
             </div><! end content -->
