@@ -11,6 +11,10 @@ a:hover {
     text-decoration: none;
 }
 
+h2 {
+    font-size: 24px;
+}
+
 img {
     float: left;
     padding-right: 15px;
@@ -32,6 +36,7 @@ td {
     padding: 5px 0;
     border-bottom: solid 1px #e4e4e4;
 }
+
 .footable-row-detail-name {
     display: table-cell;
     font-weight: normal;
@@ -206,12 +211,15 @@ footer {
     background-color: #a89400;
 }
 
-/**/
+/*wat extra padding onder de velden*/
 
 .field-name-field-rit-nr-gruppo,
 .field-name-field-datum-vertrek,
 .field-name-field-afstand,
-.field-name-field-verantwoordelijke {
+.field-name-field-oefen-afstand,
+.field-name-field-verantwoordelijke,
+.field-name-field-url,
+.field-name-field-plaats {
     padding-bottom: 10px;
 }
 
@@ -221,6 +229,13 @@ footer {
 .field-name-field-rit-nr-gruppo .field-item {
     padding-left: 5px;
     font-size: large;
+}
+
+#block-views-sponsors-block-1,
+#block-views-grupposportivo-ritten-block-1,
+#block-views-oefenritten-block-1,
+#block-views-klassiekers-block-1{
+    margin: 25px 0 35px 0;
 }
 
 /*alle extra opmaak*/

@@ -22,11 +22,11 @@
                         <span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu" role="menu">
-                        <li><a href="<?php print base_path() ?>grupposportivo-ritten ">Grupposportivo ritten</a> </li>
-                        <li><a href="#">Oefenritten</a></li>
-                        <li><a href="#">Klassiekers</a></li>
-                        <li><a href="#">Permanente ritten</a> </li>
-                        <li><a href="<?php print base_path() ?>gps-route">GPS ritten</a> </li>
+                        <li><a href="<?php print base_path() ?>grupposportivo-ritten ">Grupposportivo ritten</a></li>
+                        <li><a href="<?php print base_path() ?>oefenritten ">Oefenritten</a></li>
+                        <li><a href="<?php print base_path() ?>klassiekers ">Klassiekers</a></li>
+                        <li><a href="<?php print base_path() ?>permanente-ritten ">Permanente ritten</a></li>
+                        <li><a href="<?php print base_path() ?>gps-route">GPS ritten</a></li>
                     </ul>
                 </li>
                 <li><a href="<?php print base_path() ?>leden">Leden</a></li>
@@ -39,6 +39,7 @@
                 <li><a href="#">Video's</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
+                <!-- de inlog button en user print -->
                 <li><?php global $user; if ($user->uid != 0)
                     { print '<li class="first">' .t('').
                         '<a href="' .url('user/'.$user->uid). '">' .$user->name. '</a>
