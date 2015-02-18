@@ -9,3 +9,5 @@ gebruikt daardoor kon dit gebeuren
 
 De buttons (volgende rit) in de zijbalk naar de alle ritten, worden aangemaakt in de view via een
 tekstveld in de voet.
+
+Het fotoalbum overzicht een wrapper class 'album-overzicht' in de view aangemaakt

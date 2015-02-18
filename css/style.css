@@ -17,7 +17,7 @@ h2 {
 
 img {
     float: left;
-    padding-right: 15px;
+    padding: 0 15px 15px 0;
     display: block;
     max-width: 100%;
     height: auto;
@@ -50,6 +50,7 @@ td {
 /*aanpassing nav menu van bootstrap*/
 .navbar-inverse .navbar-nav > li > a {
     color: #ffff00;
+    padding: 15px 10px 0 10px;
 }
 
 .dropdown-menu {
@@ -67,9 +68,14 @@ td {
     background-color: #000000;
 }
 
+/**/
 .container_wrap {
-    margin-top: -30px;
+    /*margin-top: -30px;*/ /*om een of andere duistere reden moeten aanpassen*/
     background: #ffffff;
+}
+
+.bcg_header {
+    margin-top: -30px;
 }
 
 .bcg_header #logo_wrap, .bcg_header #club_name_wrap {
@@ -96,6 +102,7 @@ td {
     padding-right: 15px;
 }
 
+/*sponsors*/
 .sponsor_wrap {
     width: 100%;
     padding-bottom: 10px;
@@ -115,6 +122,7 @@ td {
     background: url("../images/black-cyclist.png") no-repeat left top;
 }
 
+/*nieuws blok voor alle bezoekers en de leden*/
 #news_anoniem h2 a {
     color: #ffffff;
 }
@@ -305,6 +313,30 @@ footer {
     border-bottom: solid 1px #e4e4e4;
 }
 
+/*foto albums*/
+.album-overzicht h3 {
+    font-size: 15px;
+}
+
+.album-overzicht {
+    width: 210px;
+    float: left;
+}
+
+/*video*/
+
+.veld-video { /* class aangemaakt in de view*/
+    float: left;
+    padding-right: 35px;
+    width: 400px;
+    margin-bottom: 35px;
+}
+
+.veld-video .views-field-title {
+    font-size: large;
+    padding-bottom: 10px;
+}
+
 /*better login */
 
 #auth_box img {
@@ -316,6 +348,7 @@ footer {
     #club_name_wrap {
         width: 50%;
     }
+
 }
 
 /* All Mobile Sizes (devices and browser) */
@@ -327,5 +360,14 @@ footer {
     .group-header {
         width: 100%;
     }
+
+    .veld-video {
+        width: 275px;
+    }
 }
 
+body {
+    padding-top:70px;
+}
+
+/*bootstrap aanpassing menu*/

@@ -10,7 +10,6 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
@@ -35,8 +34,8 @@
                 <li><a href="<?php print base_path() ?>linken">Linken</a></li>
                 <li><a href="<?php print base_path() ?>grupposprotivo-contacteren">Contacteren</a></li>
                 <li><a href="<?php print base_path() ?>gastenboek-berichten ">Gastenboek</a></li>
-                <li><a href="#">Fotoalbums</a></li>
-                <li><a href="#">Video's</a></li>
+                <li><a href="<?php print base_path() ?>fotoalbums">Fotoalbums</a></li>
+                <li><a href="<?php print base_path() ?>video">Video's</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <!-- de inlog button en user print -->
