@@ -31,7 +31,7 @@
                 <li><a href="<?php print base_path() ?>leden">Leden</a></li>
                 <li><a href="<?php print base_path() ?>aanwezigheidslijst">Aanwezigheidslijst</a></li>
                 <li><a href="<?php print base_path() ?>blog">Blog</a></li>
-                <li><a href="<?php print base_path() ?>linken">Linken</a></li>
+                <li><a href="<?php print base_path() ?>interssante-linken">Linken</a></li>
                 <li><a href="<?php print base_path() ?>grupposprotivo-contacteren">Contacteren</a></li>
                 <li><a href="<?php print base_path() ?>gastenboek-berichten ">Gastenboek</a></li>
                 <li><a href="<?php print base_path() ?>fotoalbums">Fotoalbums</a></li>
