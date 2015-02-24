@@ -353,6 +353,14 @@ footer {
     padding-bottom: 10px;
 }
 
+/*edit account form*/
+
+#edit-account .form-item-current-pass,
+#edit-account .form-item-mail,
+#field-voornaam-add-more-wrapper {
+    margin: 2em 0;
+}
+
 /*better login */
 
 #auth_box img {
