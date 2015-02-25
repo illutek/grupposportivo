@@ -357,8 +357,19 @@ footer {
 
 #edit-account .form-item-current-pass,
 #edit-account .form-item-mail,
-#field-voornaam-add-more-wrapper {
+#field-voornaam-add-more-wrapper,
+#field-familienaam-add-more-wrapper,
+#field-adres-add-more-wrapper ,
+#field-postcode-en-gemeente-add-more-wrapper {
     margin: 2em 0;
+}
+
+#edit-account .form-item-current-pass label,
+#field-voornaam-add-more-wrapper label,
+#field-familienaam-add-more-wrapper label,
+#field-adres-add-more-wrapper label,
+#field-postcode-en-gemeente-add-more-wrapper label {
+    padding-right: 15px;
 }
 
 /*better login */
