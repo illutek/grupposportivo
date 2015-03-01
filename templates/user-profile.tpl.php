@@ -39,20 +39,34 @@
         aantal items die enkel zichtbaar zijn voor de uiteraard ingelogde leden</p>
     <p>Om later terug te keren naar deze pagina, dit kan door op je gebruikersnaam te klikken
         bovenaan rechts op de menubalk.</p>
-    <?php print render($user_profile['field_voornaam']); ?><br>
-    <?php print render($user_profile['field_familienaam']); ?><br>
-    <?php print render($user_profile['field_adres']); ?><br>
-    <?php print render($user_profile['field_postcode_en_gemeente']); ?>
-    <?php print render($user_profile); ?>
+    <h3>Persoonlijke gegevens</h3>
+    <div class="user_item">
+        <?php print render($user_profile['field_voornaam']); ?>
+    </div>
+    <div class="user_item">
+        <?php print render($user_profile['field_familienaam']); ?>
+    </div>
+    <div class="user_item">
+        <?php print render($user_profile['field_adres']); ?>
+    </div>
+    <div class="user_item">
+        <?php print render($user_profile['field_postcode_en_gemeente']); ?>
+    </div>
+
+    <?php
+    global $user;
+    print render($user_profile);
+    ?>
     <h3>Linken voor de ingelogde leden</h3>
-    <ul>
+    <ul class="user_linken">
         <li>
             <a href="<?php print base_path() ?>ledenvergaderingen">Verslagen ledenvergaderingen</a>
         </li>
-        <li>
-            <a href="<?php print base_path() ?>bestuursvergaderingen">Verslagen bestuursvergaderingen</a>
-            (leden geen toegang)
-        </li>
+        <?php if (in_array('editor', array_values($user->roles))) { ?>
+            <li>
+                <a href="<?php print base_path() ?>bestuursvergaderingen">Verslagen bestuursvergaderingen</a>
+            </li>
+        <?php } ?>
         <li>
             <?php print l(t('Je account bewerken'), "user/{$GLOBALS['user']->uid}/edit"); ?>
         </li>

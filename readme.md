@@ -12,3 +12,8 @@ tekstveld in de voet.
 
 Het fotoalbum overzicht een wrapper class 'album-overzicht' in de view aangemaakt, geen tpl file
 Een cover afbeelding en een veld multi upload voor de rest van de afbeeldingen.
+
+
+Gebruik van de site
+
+Na inloggen van de user krijgt hij een opgemaakte pagina te zien (user-profile.tpl.php)
