@@ -267,8 +267,12 @@ footer {
     overflow: hidden;
 }
 
-/*GPS ritten routes*/
-.url_gpsroute {}
+/* ritten opmaak date om vertrekuur na date te plaatsen*/
+
+.vertrek-date {
+    float: left;
+    padding-right: 15px;
+}
 
 /*Blog systeem*/
 
@@ -303,6 +307,23 @@ footer {
 
 .node-lid h3 {
     font-size: 17px;
+}
+
+/*contactform*/
+
+#webform-client-form-9 label {
+    width: 120px;
+}
+
+#webform-client-form-9 input,
+#webform-client-form-9 textarea {
+    border: solid 1px #ceb500;
+    padding: 5px;
+}
+
+#webform-client-form-9 input[type="submit"] {
+    background: white;
+    padding: 10px;
 }
 
 /*gastenboek*/
