@@ -19,6 +19,4 @@ drupal_add_js(drupal_get_path('theme', 'gruppo') . '/js/jquery.backstretch.min.j
 
 drupal_add_js(drupal_get_path('theme', 'gruppo') . '/js/custom_backstretch.js');
 
-drupal_add_js(drupal_get_path('theme', 'gruppo') . '/js/npm.js');
-
 drupal_add_js(drupal_get_path('theme', 'gruppo') . '/js/ie10-viewport-bug-workaround.js');
