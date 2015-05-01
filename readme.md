@@ -4,6 +4,9 @@ De GSP route is vorm gegeven in de view zelf, om de image te linken met de gps r
     hier is de claas routeyou aangemaakt
     het linken van de image naar de routeyou.com is eveneens hier toegepast, tegen mijn zin
 
+De slideshow in de header met backstretch, de images in de themplate map 'images' het linken
+gebeurt in het custom_backstretch.js bestand
+
 In de node.tpl.php file de link op de  titel h2 verwijderd er is op de hele site geen enkel teaser
 gebruikt daardoor kon dit gebeuren
 
@@ -13,7 +16,7 @@ tekstveld in de voet.
 Het fotoalbum overzicht een wrapper class 'album-overzicht' in de view aangemaakt, geen tpl file
 Een cover afbeelding en een veld multi upload voor de rest van de afbeeldingen.
 
-Om het label vertrekuur te kunnen afprinten voor het uur , bij datum instellingen 2  extra formaten
+Om het label vertrek uur te kunnen afprinten voor het uur , bij datum instellingen 2  extra formaten
 aangemaakt 1 enkel met de datum en 1 met enkel het uur, deze beide velden 'vertrekuur' toegevoegd
 in de view en met css deze beide velden naast elkaar plaatsen
 (resultaten herschreven class vertrek-date toegevoegd)

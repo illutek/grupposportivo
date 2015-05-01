@@ -267,7 +267,9 @@ footer {
     overflow: hidden;
 }
 
-/* ritten opmaak date om vertrekuur na date te plaatsen*/
+/*
+* ritten opmaak date om vertrekuur na date te plaatsen
+*/
 
 .vertrek-date {
     float: left;
