@@ -39,18 +39,25 @@
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <!-- de inlog button en user print -->
-                <li><?php global $user; if ($user->uid != 0)
-                    { print '<li class="first">' .t('').
-                        '<a href="' .url('user/'.$user->uid). '">' .$user->name. '</a>
-                        </li>'; print '<li>
-                        <a href="' .url('user/logout'). '">' .t('Logout'). '</a>
-                        </li>'; } else { print '<li class="first">
-                        <a href="' .url('user'). '">' .t('Login'). '</a>
-                        </li>'; print '<li>
-                        <a href="' .url('user/register'). '">' .t(''). '</a>
-                        </li>'; } ?></li>
+                <li><?php global $user;
+                    if ($user->uid != 0) {
+                        print '<li class="first">' . t('') .
+                            '<a href="' . url('user/' . $user->uid) . '">' . $user->name . '</a>
+                        </li>';
+                        print '<li>
+                        <a href="' . url('user/logout') . '">' . t('Logout') . '</a>
+                        </li>';
+                    } else {
+                        print '<li class="first">
+                        <a href="' . url('user') . '">' . t('Login') . '</a>
+                        </li>';
+                        print '<li>
+                        <a href="' . url('user/register') . '">' . t('') . '</a>
+                        </li>';
+                    } ?></li>
             </ul>
-        </div><!--/.navbar-collapse -->
+        </div>
+        <!--/.navbar-collapse -->
     </div>
 </nav>
 
@@ -59,9 +66,10 @@
     <div class="container">
         <div id="logo_wrap" class="col-md-4">
             <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
-                <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
+                <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>"/>
             </a>
-        </div><!-- end logo_wrap -->
+        </div>
+        <!-- end logo_wrap -->
         <div id="club_name_wrap" class="col-md-8">
             <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="">
                 <img src="<?php print base_path() . path_to_theme(); ?>/images/club_name-min.png"
@@ -71,14 +79,15 @@
                 <div class="slogan"><?php print $site_slogan; ?></div>
             <?php endif; ?>
         </div>
-            <div class="col-md-8 route">
-                <a href="<?php print base_path() ?>route-naar-de-flipper">
+        <div class="col-md-8 route">
+            <a href="<?php print base_path() ?>route-naar-de-flipper">
                 <img src="<?php print base_path() . path_to_theme(); ?>/images/google_maps_icon-min.jpg"
                      alt="google_maps">
                 Café Flipper Heirstraat 156 3630 Maasmechelen</a><!-- hier printen van de contact gegevens -->
-            </div>
-        </div><!-- end club_name_wrap -->
+        </div>
     </div>
+    <!-- end club_name_wrap -->
+</div>
 </div><!-- end bcg_header -->
 
 <!-- zijbalk content en bottom content, dus alle inhoud -->
@@ -89,7 +98,8 @@
             <div id="inner_zijbalk_left">
                 <?php print render($page['sidebar_left']); ?>
             </div>
-        </div><!-- end sidebar_left -->
+        </div>
+        <!-- end sidebar_left -->
 
         <div id="content_wrap" class="col-md-9">
             <?php if ($page['news_anoniem']): ?>
@@ -109,13 +119,15 @@
                 <?php if ($title): ?>
                     <h1 class="title" id="page-title"><?php print $title; ?></h1><?php endif; ?>
                 <?php print render($title_suffix); ?>
-                <?php if ($tabs): ?><div class="tabs"><?php print render($tabs); ?></div><?php endif; ?>
+                <?php if ($tabs): ?>
+                    <div class="tabs"><?php print render($tabs); ?></div><?php endif; ?>
                 <?php print render($page['help']); ?>
                 <?php if ($action_links): ?>
                     <ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
                 <?php print render($page['content']); ?>
                 <?php print $feed_icons; ?>
-            </div><! end content -->
+            </div>
+            <!-- end content -->
 
             <!-- Onderste content met 3 verschillende regions worden altijd getoon -->
             <div class="" id="content_bottom_wrap">
@@ -148,8 +160,10 @@
                     <a href="<?php print base_path() ?>wielerflits" class="btn btn-gruppo" role="button">Meer</a>
                 </div>
             </div>
-        </div><!-- end content_wrap -->
-    </div><!-- end row -->
+        </div>
+        <!-- end content_wrap -->
+    </div>
+    <!-- end row -->
 </div> <!-- end container /container_wrap-->
 
 <!-- footer met de copy vermelding en de contact gegevens degene die ook in de header zijn geplaats
@@ -159,3 +173,17 @@ ga hier voor een inhoudstype aanmaken en dit op een of andere manier hier rechts
         <p>&copy; Grupposportivo 2014</p>
     </footer>
 </div>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="<?php print base_path() . path_to_theme(); ?>/js/bootstrap.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="<?php print base_path() . path_to_theme(); ?>/js/ie10-viewport-bug-workaround.js"></script>
+<!-- Backstretch -->
+<!-- onderstaande code aanpassen voor de theme -->
+<script src="<?php print base_path() . path_to_theme(); ?>/js/jquery.min.js"></script>
+<script src="<?php print base_path() . path_to_theme(); ?>/js/jquery.backstretch.min.js"></script>
+
+<script src="<?php print base_path() . path_to_theme(); ?>/js/custom_backstretch.js"></script>
