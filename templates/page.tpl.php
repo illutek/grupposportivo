@@ -173,17 +173,3 @@ ga hier voor een inhoudstype aanmaken en dit op een of andere manier hier rechts
         <p>&copy; Grupposportivo 2014</p>
     </footer>
 </div>
-
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script src="<?php print base_path() . path_to_theme(); ?>/js/bootstrap.min.js"></script>
-<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<script src="<?php print base_path() . path_to_theme(); ?>/js/ie10-viewport-bug-workaround.js"></script>
-<!-- Backstretch -->
-<!-- onderstaande code aanpassen voor de theme -->
-<script src="<?php print base_path() . path_to_theme(); ?>/js/jquery.min.js"></script>
-<script src="<?php print base_path() . path_to_theme(); ?>/js/jquery.backstretch.min.js"></script>
-
-<script src="<?php print base_path() . path_to_theme(); ?>/js/custom_backstretch.js"></script>

@@ -21,9 +21,10 @@ aangemaakt 1 enkel met de datum en 1 met enkel het uur, deze beide velden 'vertr
 in de view en met css deze beide velden naast elkaar plaatsen
 (resultaten herschreven class vertrek-date toegevoegd)
 
-De linken naar de js bestanden worden onderaan op de page.tpl.php geprint zou niet mogen
-maar worden ze naar de template.php met de functie drupal_add_js dan werkt de module
-footable niet meer, de rede is me tot op heden onduidelijk.
+De locale js bestanden include via het info file, de externe via de function hook_preprocess_page
+ - drupal_add_js op template.php
+De module jQuery Update is noodzakelijk, ingesteld op 1.10 versie voor de module FooTable
+
 
 Gebruik van de site
 
