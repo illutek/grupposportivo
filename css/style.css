@@ -48,7 +48,9 @@ td {
     margin-top: 50px;
 }
 
-/*aanpassing nav menu van bootstrap*/
+/*
+*aanpassing nav menu van bootstrap
+============================================================*/
 .navbar-inverse .navbar-nav > li > a {
     color: #ffff00;
     padding: 15px 10px 0 10px;
@@ -69,7 +71,9 @@ td {
     background-color: #000000;
 }
 
-/**/
+/*
+*
+==========================================================*/
 .container_wrap {
     /*margin-top: -30px;*/
     /*om een of andere duistere reden moeten aanpassen*/
@@ -104,7 +108,9 @@ td {
     padding-right: 15px;
 }
 
-/*sponsors*/
+/*sponsors
+*
+=======================================================*/
 .sponsor_wrap {
     width: 100%;
     padding-bottom: 10px;
@@ -114,7 +120,13 @@ td {
     overflow: hidden;
 }
 
-.sponsor_wrap img {
+.sponsor_sidebar_wrap td {
+    border-top: solid 1px #ffffff;
+    border-bottom: none;
+}
+
+.sponsor_sidebar_wrap .sponsor_sidebar_title {
+    font-size: 16px;
 }
 
 #inner_zijbalk_left h2, #content_bottom_wrap h2, .title_attachment {
@@ -124,7 +136,9 @@ td {
     background: url("../images/black-cyclist.png") no-repeat left top;
 }
 
-/*nieuws blok voor alle bezoekers en de leden*/
+/*
+*nieuws blok voor alle bezoekers en de leden
+=========================================================*/
 #news_anoniem h2 a {
     color: #ffffff;
 }
@@ -149,7 +163,9 @@ td {
     padding-right: 15px;
 }
 
-/*bottom region*/
+/*
+*bottom region
+=========================================================*/
 
 #content_bottom_wrap {
     clear: both;
@@ -171,7 +187,7 @@ td {
 }
 
 .bottom_first .views-field-title a {
-   /* color: #000000;*/
+    /* color: #000000;*/
 }
 
 .bottom_midle .views-row-1 {
@@ -204,7 +220,9 @@ footer {
     padding-top: 15px;
 }
 
-/* Buttons */
+/*
+* Buttons
+========================================*/
 .btn {
     border-radius: 0px;
 }
@@ -269,14 +287,16 @@ footer {
 
 /*
 * ritten opmaak date om vertrekuur na date te plaatsen
-*/
+==========================================================*/
 
 .vertrek-date {
     float: left;
     padding-right: 15px;
 }
 
-/*Blog systeem*/
+/*
+*Blog systeem
+=======================================================*/
 
 .view-id-blog .submitted, .node-blog .submitted {
     padding-bottom: 10px;
@@ -290,7 +310,9 @@ footer {
     padding: 5px 0;
 }
 
-/*leden pagina*/
+/*
+*leden pagina
+===================================================*/
 
 .node-lid, .node-linken {
     width: 220px;
@@ -311,7 +333,9 @@ footer {
     font-size: 17px;
 }
 
-/*contactform*/
+/*
+*contactform
+================================================*/
 
 #webform-client-form-9 label {
     width: 120px;
@@ -328,7 +352,9 @@ footer {
     padding: 10px;
 }
 
-/*gastenboek*/
+/*
+*gastenboek
+===============================================*/
 
 .person_icon {
     padding: 0 0 20px 32px;
@@ -352,7 +378,9 @@ footer {
     width: 290px;
 }
 
-/*foto albums*/
+/*
+*foto albums
+===============================================*/
 .album-overzicht h3 {
     font-size: 15px;
 }
@@ -362,7 +390,9 @@ footer {
     float: left;
 }
 
-/*video*/
+/*
+*video
+============================================*/
 
 .veld-video {
     /* class aangemaakt in de view*/
@@ -378,8 +408,8 @@ footer {
 }
 
 /*user pagina's */
-
-/*edit account form*/
+/*==============================================
+edit account form*/
 #edit-account .form-item-current-pass,
 #edit-account .form-item-mail,
 #field-voornaam-add-more-wrapper,
@@ -398,11 +428,9 @@ footer {
 }
 
 /* persoonlijke gegevens opmaken */
-.user_item, ul.user_linken li  {
+.user_item, ul.user_linken li {
     line-height: 1.8em;
 }
-
-
 
 /*better login */
 
@@ -414,6 +442,9 @@ footer {
     color: white;
 }
 
+/*
+*media querys
+================================================================*/
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
     #club_name_wrap {
@@ -426,13 +457,16 @@ footer {
     .group-header img {
         float: none;
     }
+
     .group-header {
         width: 100%;
     }
+
     .veld-video {
         width: 275px;
     }
 }
+
 @media only screen and (max-width: 479px) {
     /* css code voor smartphones in portrait mode */
 
