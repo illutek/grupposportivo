@@ -108,8 +108,8 @@ td {
     padding-right: 15px;
 }
 
-/*sponsors
-*
+/*
+*sponsors
 =======================================================*/
 .sponsor_wrap {
     width: 100%;
@@ -125,8 +125,9 @@ td {
     border-bottom: none;
 }
 
-.sponsor_sidebar_wrap .sponsor_sidebar_title {
+.sponsor_sidebar_wrap .sponsor_sidebar_title a {
     font-size: 16px;
+    line-height: 32px;
 }
 
 #inner_zijbalk_left h2, #content_bottom_wrap h2, .title_attachment {
@@ -407,6 +408,22 @@ footer {
     padding-bottom: 10px;
 }
 
+/*
+*pager opmaak
+==========================================*/
+
+.item-list .pager li {
+    padding: 0 0 1.5em 0;
+}
+
+.item-list ul.pager li {
+    margin: 0 0 0.25em 1.0em;
+}
+
+.pager li > a, .pager li > span {
+    border-radius: 0;
+}
+
 /*user pagina's */
 /*==============================================
 edit account form*/
@@ -445,29 +462,58 @@ edit account form*/
 /*
 *media querys
 ================================================================*/
-/* Tablet Portrait size to standard 960 (devices and browsers) */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-    #club_name_wrap {
-        width: 50%;
+
+@media only screen and (max-width: 1366px) {
+    /* css code voor tablets in landscape mode
+	De 1366px op aanraden van Koen (was 1024)*/
+    #inner_zijbalk_left h2, #content_bottom_wrap h2, .title_attachment {
+        font-size: 16px;
     }
 }
 
-/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 960px) {
+    /* css code voor tablets in portrait mode */
+    .club_name_img img {
+        width: 55%;
+        height: auto;
+    }
+    #inner_zijbalk_left h2, #content_bottom_wrap h2, .title_attachment {
+        font-size: 16px;
+    }
+
+}
+
 @media only screen and (max-width: 767px) {
-    .group-header img {
-        float: none;
+    /* css code voor smartphones in landscape mode */
+    .logo_img img {
+        width: 40%;
+        height: auto;
     }
-
-    .group-header {
-        width: 100%;
-    }
-
     .veld-video {
         width: 275px;
+    }
+    .node-lid {
+        margin: 0 0 0 35px;
     }
 }
 
 @media only screen and (max-width: 479px) {
     /* css code voor smartphones in portrait mode */
+    .logo_img img {
+        width: 100%;
+        height: auto;
+    }
+    .club_name_img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .bcg_header .slogan {
+        font-size: 15px;
+    }
+
+    .content img {
+        float: none;
+    }
 
 }
