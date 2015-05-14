@@ -25,6 +25,9 @@ De locale js bestanden include via het info file, de externe via de function hoo
  - drupal_add_js op template.php
 De module jQuery Update is noodzakelijk, ingesteld op 1.10 versie voor de module FooTable
 
+De sidebar_left onder de content geplaatst en met pull/push deze terug links geplaatst, heeft
+als voordeel dat google nu eerst de belangrijkere content ziet, en nu wordt de sidebar_left
+op een smartphone onder de content getoond
 
 Gebruik van de site
 
