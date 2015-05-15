@@ -84,8 +84,12 @@ td {
     margin-top: -30px;
 }
 
-.bcg_header #logo_wrap, .bcg_header #club_name_wrap {
+.bcg_header #logo_wrap, .bcg_header .club_name_wrap {
     padding-top: 30px;
+}
+
+.bcg_header #logo_wrap {
+    overflow: auto;
 }
 
 .bcg_header .slogan, .bcg_header .route {
@@ -477,6 +481,7 @@ edit account form*/
         width: 55%;
         height: auto;
     }
+
     #inner_zijbalk_left h2, #content_bottom_wrap h2, .title_attachment {
         font-size: 16px;
     }
@@ -489,9 +494,11 @@ edit account form*/
         width: 40%;
         height: auto;
     }
+
     .veld-video {
         width: 275px;
     }
+
     .node-lid {
         margin: 0 0 0 35px;
     }
@@ -503,6 +510,7 @@ edit account form*/
         width: 100%;
         height: auto;
     }
+
     .club_name_img img {
         width: 100%;
         height: auto;
@@ -516,4 +524,7 @@ edit account form*/
         float: none;
     }
 
+    .bcg_header .route {
+        padding-top: 25px;
+    }
 }

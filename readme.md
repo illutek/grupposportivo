@@ -29,6 +29,11 @@ De sidebar_left onder de content geplaatst en met pull/push deze terug links gep
 als voordeel dat google nu eerst de belangrijkere content ziet, en nu wordt de sidebar_left
 op een smartphone onder de content getoond
 
+Probleem op 20150515 bug - op een smartphone is het logo niet klikbaar, de structuur in de
+header aangepast nested cols (lost het prbleem niet op),
+logo heeft geen hoogte div name-wrap neemt dan die ruimte in, door volgende css toe te
+voegen .bcg_header #logo_wrap {overflow: auto;} probleem opgelost.
+
 Gebruik van de site
 
 Na inloggen van de user krijgt hij een opgemaakte pagina te zien (user-profile.tpl.php)

@@ -63,33 +63,39 @@
 <!-- bcg_header hier de bootstrap slider, logo, site naam, slogan en googlemaps -->
 <div class="bcg_header"><!-- class bcg_header in bootstrap.css op regel 4850 ongeveer -->
     <div class="container">
-        <div id="logo_wrap" class="col-md-4">
-            <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
-                <div class="logo_img">
-                    <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>"/>
+        <div class="row">
+            <div id="logo_wrap" class="col-md-4">
+                <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
+                    <div class="logo_img">
+                        <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>"/>
+                    </div>
+                </a>
+            </div>
+            <!-- end logo_wrap -->
+            <div class="club_name_wrapper col-md-8">
+                <div class="row">
+                    <div class="club_name_wrap col-md-12">
+                        <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home">
+                            <div class="club_name_img">
+                                <img src="<?php print base_path() . path_to_theme(); ?>/images/club_name-min.png"
+                                     alt="Grupposportivo">
+                            </div>
+                        </a>
+                        <?php if ($site_slogan): ?>
+                            <div class="slogan"><?php print $site_slogan; ?></div>
+                        <?php endif; ?>
+                    </div>
+                    <!-- end club_name_wrap -->
+                    <div class="route col-md-12">
+                        <a href="<?php print base_path() ?>route-naar-de-flipper">
+                            <img src="<?php print base_path() . path_to_theme(); ?>/images/google_maps_icon-min.jpg"
+                                 alt="google_maps">Café Flipper Heirstraat 156 3630 Maasmechelen
+                        </a><!-- hier printen van de contact gegevens -->
+                    </div><!-- end route -->
                 </div>
-            </a>
+            </div><!-- end club_name_wrapper -->
         </div>
-        <!-- end logo_wrap -->
-        <div id="club_name_wrap" class="col-md-8">
-            <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home">
-                <div class="club_name_img">
-                    <img src="<?php print base_path() . path_to_theme(); ?>/images/club_name-min.png"
-                         alt="Grupposportivo">
-                </div>
-            </a>
-            <?php if ($site_slogan): ?>
-                <div class="slogan"><?php print $site_slogan; ?></div>
-            <?php endif; ?>
-        </div>
-        <div class="col-md-8 route">
-            <a href="<?php print base_path() ?>route-naar-de-flipper">
-                <img src="<?php print base_path() . path_to_theme(); ?>/images/google_maps_icon-min.jpg"
-                     alt="google_maps">Café Flipper Heirstraat 156 3630 Maasmechelen
-            </a><!-- hier printen van de contact gegevens -->
-        </div>
-    </div>
-    <!-- end club_name_wrap -->
+    </div><!-- end container -->
 </div>
 <!-- end bcg_header -->
 
@@ -166,7 +172,8 @@
         <!-- end sidebar_left -->
     </div>
     <!-- end row -->
-</div> <!-- end container /container_wrap-->
+</div>
+<!-- end container /container_wrap-->
 
 <!-- footer met de copy vermelding en de contact gegevens degene die ook in de header zijn geplaats
 ga hier voor een inhoudstype aanmaken en dit op een of andere manier hier rechtstreeks printen -->
