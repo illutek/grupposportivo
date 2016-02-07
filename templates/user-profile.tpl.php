@@ -62,7 +62,7 @@
         <li>
             <a href="<?php print base_path() ?>ledenvergaderingen">Verslagen ledenvergaderingen</a>
         </li>
-        <?php if (in_array('editor', array_values($user->roles))) { ?>
+        <?php if (in_array('bestuur', array_values($user->roles))) { ?>
             <li>
                 <a href="<?php print base_path() ?>bestuursvergaderingen">Verslagen bestuursvergaderingen</a>
             </li>

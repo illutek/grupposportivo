@@ -29,7 +29,12 @@
                     </ul>
                 </li>
                 <li><a href="<?php print base_path() ?>leden">Leden</a></li>
-                <li><a href="<?php print base_path() ?>aanwezigheidslijst">Aanwezigheidslijst</a></li>
+                <?php global $user; ?>
+                <?php if ($user->uid != 0) {
+                    print '<li><a href="' . base_path() . 'aanwezigheidslijst">Aanwezigheidslijst</a></li>';
+                } else {
+                    print '';
+                } ?>
                 <li><a href="<?php print base_path() ?>blog">Blog</a></li>
                 <li><a href="<?php print base_path() ?>interssante-linken">Linken</a></li>
                 <li><a href="<?php print base_path() ?>grupposprotivo-contacteren">Contacteren</a></li>
@@ -39,7 +44,7 @@
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <!-- de inlog button en user print -->
-                <?php global $user;
+                <?php
                 if ($user->uid != 0) {
                     print '<li class="first">' . t('') .
                         '<a href="' . url('user/' . $user->uid) . '">' . $user->name . '</a>
@@ -91,11 +96,14 @@
                             <img src="<?php print base_path() . path_to_theme(); ?>/images/google_maps_icon-min.jpg"
                                  alt="google_maps">Café Flipper Heirstraat 156 3630 Maasmechelen
                         </a><!-- hier printen van de contact gegevens -->
-                    </div><!-- end route -->
+                    </div>
+                    <!-- end route -->
                 </div>
-            </div><!-- end club_name_wrapper -->
+            </div>
+            <!-- end club_name_wrapper -->
         </div>
-    </div><!-- end container -->
+    </div>
+    <!-- end container -->
 </div>
 <!-- end bcg_header -->
 
