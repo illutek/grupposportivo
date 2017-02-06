@@ -28,7 +28,7 @@
                         <li><a href="<?php print base_path() ?>gps-route">GPS ritten</a></li>
                     </ul>
                 </li>
-                <li><a href="<?php print base_path() ?>leden">Leden</a></li>
+                <li><a href="<?php print base_path() ?>leden">Clubleden</a></li>
                 <?php global $user; ?>
                 <?php if ($user->uid != 0) {
                     print '<li><a href="' . base_path() . 'aanwezigheidslijst">Aanwezigheidslijst</a></li>';
@@ -54,7 +54,7 @@
                         </li>';
                 } else {
                     print '<li class="first">
-                        <a href="' . url('user') . '">' . t('Login') . '</a>
+                        <a href="' . url('user') . '">' . ('Leden') . '</a>
                         </li>';
 
                 } ?>
