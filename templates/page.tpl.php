@@ -37,10 +37,12 @@
                 } ?>
                 <li><a href="<?php print base_path() ?>blog">Blog</a></li>
                 <li><a href="<?php print base_path() ?>interssante-linken">Linken</a></li>
-                <li><a href="<?php print base_path() ?>grupposprotivo-contacteren">Contacteren</a></li>
+                <li><a href="<?php print base_path() ?>grupposportivo-contacteren">Contacteren</a></li>
                 <li><a href="<?php print base_path() ?>gastenboek-berichten ">Gastenboek</a></li>
                 <li><a href="<?php print base_path() ?>fotoalbums">Fotoalbums</a></li>
                 <li><a href="<?php print base_path() ?>video">Video's</a></li>
+                <li><a href="<?php print base_path() ?>statuten">Statuten</a></li>
+                <li><a href="<?php print base_path() ?>reglement">Reglement</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <!-- de inlog button en user print -->
